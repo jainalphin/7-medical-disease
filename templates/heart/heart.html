@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Medical Dieases Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts--> 
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+</head>
+<body>
+<!--background-->
+<h1 style="color:white"> Heart Disease Prediction</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<div>
+	<h2>Heart Disease Information <a href="{{ url_for('heart',about='about')}}">
+	<span class="glyphicon glyphicon-info-sign" style="color:white"  data-toggle="tooltip" title="Heart Disease Info"></span></a>
+	 <a href="{{ url_for('home')}}">
+          <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+        </a>
+	</h2>
+
+	  </div>
+			<form action="{{ url_for('heart')}}"  method="post">
+				<div class="left-agileits-w3layouts same">
+					<div class="gaps">
+						<p>Age</p>
+						<input type="text" name="age" placeholder="" required=""/>
+					</div>	
+					<div class="gaps">
+						<p>Sex</p>	
+							<select class="form-control" id="sex"  name="sex" required>
+							  <option></option>
+							  <option value = "0">Male</option>
+							  <option value = "1">Female</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Chest Pain Type</p>	
+							<select class="form-control" id="cp" name = "cp">
+								<option></option>
+							  <option value = "0">Typical Angina</option>
+							  <option value = "1">Atypical Angina</option>
+							  <option value = "2">Non-anginal Pain</option>
+							  <option value = "3">Asymptomatic</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Resting Blood Pressure in mm Hg</p>	
+							<input type="text" class="form-control" id="trestbps" name="trestbps"  required>
+					</div>
+					<div class="gaps">
+						<p>erum Cholestoral in mg/dl</p>	
+							<input type="text" class="form-control" id="chol" name="chol"  required>
+					</div>
+					<div class="gaps">
+						<p>Fasting Blood Sugar > 120 mg/dl</p>	
+							<select class="form-control" id="fbs" name="fbs" required>
+							  <option></option>
+							  <option value = "0">False</option>
+							  <option value = "1">True</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Resting ECG Results</p>	
+							<select class="form-control" id="restecg" name="restecg" required>
+								  <option></option>
+								  <option value = "0">Normal</option>
+								  <option value = "1">Having ST-T wave abnormality  </option>
+								  <option value = "2"> Probable or definite left ventricular hypertrophy  </option>
+								</select>
+					</div>
+					
+					<div class="gaps">
+					</div>	
+					<div class="gaps">
+					</div>			
+					<div class="gaps">	
+					</div>
+					<div class="gaps">
+					</div>		
+					<div class="gaps">	
+					</div>
+				</div>
+				<div class="right-agileinfo same">
+					<div class="gaps">
+						<p>Maximum Heart Rate</p>
+						<input type="text" class="form-control" id="thalach" name="thalach" required>
+					</div>
+					<div class="gaps">
+						<p>ST Depression Induced</p>
+						<input type="text" step="any" class="form-control" id="oldpeak" name="oldpeak" required>
+					</div>			
+					<div class="gaps">
+						<p>Exercise Induced Angina </p>	
+							<select class="form-control" id="exang" name="exang" required>
+							  <option></option>
+							  <option value = "0">No</option>
+							  <option value = "1">Yes</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Slope of the Peak Exercise ST Segment</p>	
+							<select class="form-control" id="slope" name="slope" required>
+							  <option></option>
+							  <option value = "0">Upsloping</option>
+							  <option value = "1">Flat</option>
+							  <option value = "2">Downsloping</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Number of Vessels Colored by Flourosopy</p>	
+							<select class="form-control" id="ca" name = "ca" required>
+							  <option></option>
+							  <option value = "0">0</option>
+							  <option value = "1">1</option>
+							  <option value = "2">2</option>
+							  <option value = "3">3</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Thalassemiay</p>	
+							<<select class="form-control" id="thal" name ="thal" required>
+							  <option></option>
+							  <option value = "1">Normal</option>
+							  <option value = "2">Fixed defect</option>
+							  <option value = "3">Reversable defect</option>
+							</select>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<input type="submit" value="submit" value="Result">
+			</form>
+			<div id ="result">
+			
+		</div>
+		</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</a> </p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+			<!-- //Calendar -->
+
+</body>
+</html>

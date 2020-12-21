@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Medical Dieases Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts--> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+<style>
+.about{
+	font-family: "Didot", "serif";
+	font-size:20px;
+	color: #b8d1db
+}
+ul.b {
+  list-style-type: square;
+   margin-left: 50px;
+   color:#ccc9b4;
+ 
+}
+.overview{
+	color:#ffff;
+	font-size:30px;
+	
+}
+.cause{
+	color:#c6c6ec;
+	margin-left: 50px;
+	list-style-type: circle;
+}
+</style>
+
+</head>
+<body>
+<!--background-->
+<h1 style="color:white">About</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	
+	<h2><a href="{{url_for('heart')}}" style="color:white">Breast Cancer Diseaes</a>
+	<a href="{{ url_for('home')}}">
+          <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+        </a>
+	</h2>
+	<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="static/images/breast_cancer5.png"/>
+   </div>
+   
+   <br><br>
+   <div class='about'>
+   	<div class="overview">OVERVIEW</div>
+	<br>Breast cancer is cancer that develops from breast tissue. Signs of breast cancer may include a lump in the breast, a change in breast shape, dimpling of the skin, fluid coming from the nipple, a newly inverted nipple, or a red or scaly patch of skin.
+	<br><br>
+	<div class="overview">SYMPTOMPS</div><br>
+		<ul class="b">
+			<li>A breast lump or thickening that feels different from the surrounding tissue</li>
+			<li>Change in the size, shape or appearance of a breast</li>
+			<li>Changes to the skin over the breast, such as dimpling</li>
+			<li>A newly inverted nipple</li>
+			<li>Peeling, scaling, crusting or flaking of the pigmented area of skin surrounding the nipple (areola) or breast skin</li>
+			<li>Redness or pitting of the skin over your breast, like the skin of an orange</li>
+		</ul>
+		<br><br>
+		<div class="overview">CAUSES</div>
+		<br>
+		<ul class='cause'>
+		<li>Doctors know that breast cancer occurs when some breast cells begin to grow abnormally.</li>
+		<li>These cells divide more rapidly than healthy cells do and continue to accumulate, forming a lump or mass.</li>
+		<li>Cells may spread (metastasize) through your breast to your lymph nodes or to other parts of your body.</li>
+		<li>Breast cancer most often begins with cells in the milk-producing ducts (invasive ductal carcinoma).</li>
+		<li>Breast cancer may also begin in the glandular tissue called lobules (invasive lobular carcinoma) or in other cells or tissue within the breast.</li>
+		<li>Researchers have identified hormonal, lifestyle and environmental factors that may increase your risk of breast cancer. </li>
+		<li>But it's not clear why some people who have no risk factors develop cancer, yet other people with risk factors never do. </li>
+		<li>It's likely that breast cancer is caused by a complex interaction of your genetic makeup and your environment.</li>
+	</p>
+	</div>
+	</div>
+	</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</a> </p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+
+</body>
+</html>

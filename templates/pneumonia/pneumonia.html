@@ -1,0 +1,123 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Medical Disease Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Medical Emergency Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates, 
+ Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts-->
+<style>
+
+form{
+  position: relative;
+  
+  top: 50%;
+  left: 50%;
+  margin-top: 50px;
+  margin-left: -250px;
+  margin-bottom: 100px;
+  width: 500px;
+  height: 200px;
+  border: 4px dashed #fff;
+}
+form p{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 170px;
+  color: #ffffff;
+  font-family: Arial;
+  
+}
+form input{
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+form button{
+  margin: 0;
+  color: #fff;
+  margin-bottom: 500px;
+  background: #16a085;
+  border: none;
+  width: 508px;
+  height: 35px;
+  margin-top: -20px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #117A60;
+  transition: all .2s ease;
+  outline: none;
+}
+form button:hover{
+  background: #149174;
+	color: #0C5645;
+}
+form button:active{
+  border:0;
+}
+
+
+
+
+</style> 
+</head>
+<body>
+<!--background-->
+<h1 style="color:white"> Pneumonia Prediction</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Pneumonia Information 
+	<a href="{{ url_for('pneumonia',about='about')}}">
+		<span class="glyphicon glyphicon-info-sign" style="color:white" data-toggle="tooltip" title="Pneumonia Disease Info"></span>
+	</a>
+	
+	<a href="{{ url_for('home')}}">
+        <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+    </a>
+	</h2>
+			<form action="{{url_for('pneumonia')}}" method="POST" enctype="multipart/form-data">
+			  <input type="file" multiple name='pneumonia'>
+			  <p>Click to Upload the X-Ray of Patient Lungs(jpg,jpeg,png)</p>
+			  <button type="submit">Upload</button>
+			  
+			</form>
+			
+		</div>
+		</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</a> </p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+				  <script>
+						  $(document).ready(function(){
+						  $('form input').change(function () {
+							$('form p').text(this.files.length + " file(s) selected");
+						  });
+						});
+				  </script>
+
+
+</body>
+</html>

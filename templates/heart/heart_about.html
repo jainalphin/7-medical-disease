@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Medical Dieases Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts--> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+<style>
+.about{
+	font-family: "Didot", "serif";
+	font-size:20px;
+	color: #b8d1db
+}
+ul.b {
+  list-style-type: square;
+   margin-left: 80px;
+   color:#ccc9b4
+}
+.overview{
+	color:#ffff;
+	font-size:30px;
+}
+
+</style>
+
+</head>
+<body>
+<!--background-->
+<h1 style="color:white">About</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	
+	<h2><a href="{{url_for('heart')}}" style="color:white">Heart Diease</a>
+	<a href="{{ url_for('home')}}">
+          <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+        </a>	
+	</h2>
+	
+       <img style="max-width: 500px; text-align:left ; margin-top: 10px" src="static/images/heart7.jpeg"/>
+	   <img style="max-width: 400px; text-align:right ; margin-top: 10px" src="static/images/heart6.jpeg"/>
+   
+   <div class='about'>
+   <br><br>
+   	<div class="overview">OVERVIEW</div><br>
+	Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy.</p>
+	<br><br>
+	<div class="overview">SYMPTOMPS</div><br>
+		<ul class="b">
+			<li>Chest pain, chest tightness, chest pressure and chest discomfort (angina)</li>
+			<li>Shortness of breath</li>
+			<li>Pain, numbness, weakness or coldness in your legs or arms if the blood vessels in those parts of your body are narrowed</li>
+			<li>Pain in the neck, jaw, throat, upper abdomen or back</li>
+		</ul>
+	</p>
+	
+	</div>
+	</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</a> </p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+
+
+</body>
+</html>

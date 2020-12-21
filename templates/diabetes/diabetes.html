@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Medical Dieases Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts--> 
+</head>
+<body>
+<!--background-->
+<h1 style="color:white"> Diabetes Prediction</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Diabetes Information <a href="{{ url_for('diabetes',about='about')}}">
+		<span class="glyphicon glyphicon-info-sign" style="color:white" data-toggle="tooltip" title="Diabetes Disease Info"></span>
+		</a>
+		 <a href="{{ url_for('home')}}">
+          <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+        </a>
+		</h2>
+			<form action="{{ url_for('diabetes')}}"  method="post">
+				<div class="left-agileits-w3layouts same">
+					<div class="gaps">
+						<p>Number of times pregnant</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" class="form-control" name="pregnancies" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Plasma glucose concentration a 2 hours in an oral glucose tolerance test(Glucose)</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" class="form-control" name="glucose" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Diastolic blood pressure (mm Hg)</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" class="form-control" name="bloodPressure" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Triceps skin fold thickness (mm)</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" class="form-control" name="skinThickness" placeholder="" required=""/>
+					</div>
+					
+					<div class="gaps">
+					</div>	
+					<div class="gaps">
+					</div>			
+					<div class="gaps">	
+					</div>
+					<div class="gaps">
+					</div>		
+					<div class="gaps">	
+					</div>
+				</div>
+				<div class="right-agileinfo same">
+				<div class="gaps">
+						<p>2-Hour serum insulin (mu U/ml)(Insulin)</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" class="form-control" name="insulin" placeholder="" required=""/>
+					</div>
+					<div class="gaps">					
+						<p>Body mass index (BMI)<p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text"class="form-control"  name="pregnancies" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Diabetes pedigree function</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" class="form-control" name="diabetesPedigreeFunction" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Age (years)</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text"class="form-control"  name="age" placeholder="" required=""/>
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+				<input type="Submit" value="submit" value="Result">
+			</form>
+			<div id ="result">
+			
+		</div>
+		</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</a> </p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Medical Dieases Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts--> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+
+</head>
+<body>
+<!--background-->
+<h1 style="color:white"> Breast Cancer Prediction</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Breast Cancer <a href="{{ url_for('breast_cancer',about='about')}}">
+	<span class="glyphicon glyphicon-info-sign" style="color:white" data-toggle="tooltip" title="Breast Cancer Disease Info"></span>
+	</a>
+	 <a href="{{ url_for('home')}}">
+          <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+        </a>
+	</h2>
+			<form action="{{ url_for('breast_cancer')}}"  method="post">
+				<div class="left-agileits-w3layouts same">
+					<div class="gaps">
+						<p>area worst</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" name="area_worst" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>perimeter worst</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" name="perimeter_worst" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>radius worst</p>
+						<h5 style="color:#8c9134">"worst" or largest mean value for mean of distances from center to points on the perimeter<h5>
+						<input type="text" name="radius_worst" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>concave points worst</p>
+						<h5 style="color:#8c9134">"worst" or largest mean value for number of concave portions of the contour<h5>
+						<input type="text" name="concave points_worst" placeholder="" required=""/>
+					</div>
+					
+					<div class="gaps">
+						<p>concave points mean </p>
+						<h5 style="color:#8c9134">mean for number of concave portions of the contour<h5>
+						<input type="text" name="concave points_mean" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>perimeter mean</p>
+						<h5 style="color:#8c9134">mean size of the core tumor<h5>
+						<input type="text" name="perimeter_mean" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>concavity worst	</p>
+						<h5 style="color:#8c9134">"worst" or largest mean value for severity of concave portions of the contour<h5>
+						<input type="text" name="concavity_worst" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>concavity mean</p>
+						<h5 style="color:#8c9134">mean of severity of concave portions of the contour<h5>
+						<input type="text" name="concavity_mean" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>radius mean</p>
+						<h5 style="color:#8c9134">radius mean(mean of distances from center to points on the perimeter)<h5>
+						<input type="text" name="radius_mean" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>area mean</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" name="area_mean" placeholder="" required=""/>
+					</div>					
+					<div class="gaps">
+					</div>	
+					<div class="gaps">
+					</div>			
+					<div class="gaps">	
+					</div>
+					<div class="gaps">
+					</div>		
+					<div class="gaps">	
+					</div>
+				</div>
+				<div class="right-agileinfo same">
+					<div class="gaps">
+						<p>texture worst</p>
+						<h5 style="color:#8c9134">"worst" or largest mean value for standard deviation of gray-scale values<h5>
+						<input type="text" name="texture_worst" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>compactness worst</p>
+						<h5 style="color:#8c9134">"worst" or largest mean value for perimeter^2 / area - 1.0<h5>
+						<input type="text" name="compactness_worst" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>area se</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" name="area_se" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>smoothness worst</p>
+						<h5 style="color:#8c9134">"worst" or largest mean value for local variation in radius lengths<h5>
+						<input type="text" name="smoothness_worst" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>compactness mean</p>
+						<h5 style="color:#8c9134">mean of perimeter^2 / area - 1.0<h5>
+						<input type="text" name="compactness_mean" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>radius se</p>
+						<h5 style="color:#8c9134">standard error for the mean of distances from center to points on the perimeter<h5>
+						<input type="text" name="radius_se" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>perimeter se</p>
+						<h5 style="color:#8c9134">mean size of the core tumor<h5>
+						<input type="text" name="perimeter_se" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>texture mean</p>
+						<h5 style="color:#8c9134">standard deviation of gray-scale values<h5>
+						<input type="text" name="texture_mean" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>symmetry worst</p>
+						<h5 style="color:#8c9134"><h5>
+						<input type="text" name="symmetry_worst" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>fractal_dimension_worst</p>
+						<h5 style="color:#8c9134">"worst" or largest mean value for "coastline approximation" - 1<h5>
+						<input type="text" name="fractal_dimension_worst" placeholder="" required=""/>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<input type="submit" value="submit" value="Result">
+			</form>
+			<div id ="result">
+			
+		</div>
+		</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+</body>
+</html>

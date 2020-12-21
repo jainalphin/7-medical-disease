@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Medical Dieases Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts--> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+<style>
+.about{
+	font-family: "Didot", "serif";
+	font-size:20px;
+	color: #b8d1db
+}
+ul.b {
+  list-style-type: square;
+   margin-left: 80px;
+   color:#ccc9b4
+}
+.overview{
+	color:#ffff;
+	font-size:30px;
+}
+
+</style>
+
+</head>
+<body>
+<!--background-->
+<h1 style="color:white">About</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	
+	<h2><a href="{{url_for('heart')}}" style="color:white">Pneumonia Diease</a>
+	<a href="{{ url_for('home')}}">
+          <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+        </a>
+	</h2>
+	<img style="max-width: 500px; text-align:left ; margin-top: 10px" src="static/images/pneumonia3.jpg"/>
+	   <img style="max-width: 400px; margin-left:20px ; margin-top: 10px" src="static/images/pneumonia4.jpg"/>
+	   <div class='about'>
+   <br>
+   	<div class="overview">OVERVIEW</div><br>
+	Pneumonia is an infection in one or both lungs. It can be caused by bacteria, viruses, or fungi. Bacterial pneumonia is the most common type in adults. Pneumonia causes inflammation in the air sacs in your lungs, which are called alveoli.
+	<br><br>
+	<div class="overview">SYMPTOMPS</div><br>
+	<ul class="b">
+			<li>cough</li>
+			<li>rusty or green phlegm, or sputum, coughed up from lungs fever</li>
+			<li>fast breathing and shortness of breath</li>
+			<li>shaking chills</li>
+			<li>chest pain that usually worsens when taking a deep breath, known as pleuritic pain</li>
+			<li>fast heartbeat</li>
+			<li>fatigue and weakness</li>
+			<li>nausea and vomiting</li>
+			<li>diarrhea</li>
+			<li>sweating</li>
+			<li>headache</li>
+			<li>muscle pain</li>
+			<li>confusion or delirium, especially in older adults dusky or purplish skin color, or cyanosis, from poorly oxygenated blood</li>
+		</ul>
+	</p>
+	</div>
+	</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</a> </p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+</body>
+</html>

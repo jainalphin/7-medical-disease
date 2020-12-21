@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Medical Dieases Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts--> 
+</head>
+<body>
+<!--background-->
+<h1 style="color:white"> Kidney Disease Prediction</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Kidney Disease Information  <a href="{{ url_for('kidney',about='about')}}">
+	<span class="glyphicon glyphicon-info-sign" style="color:white" data-toggle="tooltip" title="Kideny Disease Info"></span>
+	</a>
+	 <a href="{{ url_for('home')}}">
+          <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+        </a>
+	</h2>
+			<form action="{{ url_for('kidney')}}"  method="post">
+				<div class="left-agileits-w3layouts same">
+					<div class="gaps">
+						<p>packed cell volume </p>
+						<input type="text" class="form-control" name="pcv" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>hypertension </p>
+						<input type="text" class="form-control" name="htn" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>specific gravity </p>
+						<input type="text"  class="form-control" name="sg" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>albumin</p>
+						<input type="text" class="form-control" name="al" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>	hemoglobin </p>				
+						<input type="text" class="form-control" name="hemo" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>diabetes mellitus </p>					
+						<input type="text" class="form-control" name="dm" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>red blood cells </p>						
+						<input type="text" class="form-control" name="rbc" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>	red blood cell count </p>
+						<input type="text" class="form-control" name="rc" placeholder="" required=""/>
+					</div>
+					
+					
+					<div class="gaps">
+					</div>	
+					<div class="gaps">
+					</div>			
+					<div class="gaps">	
+					</div>
+					<div class="gaps">
+					</div>		
+					<div class="gaps">	
+					</div>
+				</div>
+				<div class="right-agileinfo same">
+					<div class="gaps">
+						<p>pus cell </p>
+						<input type="text" class="form-control" name="pc" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>	appetite </p>
+						<input type="text" class="form-control" name="appet" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>serum creatinine</p>						
+						<input type="text" class="form-control" name="sc" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>blood glucose random </p>						
+						<input type="text" class="form-control" name="bgr" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>	pedal edema </p>
+						<input type="text" class="form-control" name="pe" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>anemia </p>
+						<input type="text" class="form-control" name="ane" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>sugar </p>
+						<input type="text" class="form-control" name="su" placeholder="" required=""/>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<input type="submit" value="submit" value="Result">
+			</form>
+			<div id ="result">
+			
+		</div>
+		</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</a> </p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+
+</body>
+</html>

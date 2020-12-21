@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Medical Dieases Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<!--//fonts--> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script>
+   $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+   })
+</script>
+
+<style>
+.about{
+	font-family: "Didot", "serif";
+	font-size:20px;
+	color: #b8d1db
+}
+ul.b {
+  list-style-type: square;
+   margin-left: 50px;
+   color:#ccc9b4;
+ 
+}
+.overview{
+	color:#ffff;
+	font-size:30px;
+	
+}
+.cause{
+	color:#c6c6ec;
+	margin-left: 50px;
+	list-style-type: circle;
+}
+</style>
+
+</head>
+<body>
+<!--background-->
+<h1 style="color:white">About</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	
+	<h2><a href="{{url_for('heart')}}" style="color:white">About Application</a>
+	<a href="{{ url_for('home')}}">
+          <span class="glyphicon glyphicon-home"style="color:white"  data-toggle="tooltip" title="Home"></span> 
+        </a>
+	</h2>
+   <br>
+   <div class='about'>
+   	<div class="overview">Details</div>
+	<br>Welcome to the home page of the app.<br>
+	This is mainly based on as the application of the machine learning,meant to be employed in the remote and the downtrodden area. 
+	<br><br>
+	<div class="overview">Overview</div>
+	<br>
+	In todays time we see a lot of the shortage of the doctors in the world especially in India.<br>
+	A lot of people are suffering a lot without the help of the proper medical checkup.<br>
+	Also most of the cases many cases arise leading to dealth due to lack of timely medical checkup So to cope up with all of those problems this app is designed which would prove its benefits upto much extent.<br> 
+	<br>
+	<div class="overview">Application</div>
+	<br>	
+		
+		<ul class="b">
+			<li>To remove the dependencies on the doctors</li>
+			<li>To help out the poor and helpless people with the normal medical checkup</li>
+			<li>To help people avoid paying huge amount to the doctors unnecessarily</li>
+			<li>To extend the role of the technology in the medical field</li>
+		</ul>
+		<br><br>
+		<div class="overview">Created By</div><br>
+			<ul style=" color:#776b7d"><li>ALPHIN JAIN</ul></li>
+	</p>
+	</div>
+	</div>
+	</div>
+   </div>
+   <!--copyright-->
+			<div class="copy w3ls">
+		       <p>Created By Alphin Jain</a> </p>
+	        </div>
+		<!--//copyright-->
+		<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+</body>
+</html>
