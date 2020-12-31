@@ -1,4 +1,4 @@
-# 7-medical-disease
+# 7 Medical Diseases Prediction
 1. Breast Cancer
 2. Heart Disease
 3. Diabetes
